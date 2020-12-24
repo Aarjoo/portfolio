@@ -1,0 +1,646 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: rgba(129, 132, 139, 0.19);
+}
+/* .container
+{
+  height: 100vh; 
+} */
+.nav-bar
+{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgba(255, 255, 255);
+}
+.nav-title
+{
+  margin-right: 100px;
+  color:rgba(248, 50, 50, 0.856);
+  cursor: pointer;
+}
+.nav-menu
+{
+  padding: 0;
+  list-style: none;
+}
+.nav-link
+{
+  float: left;
+}
+.nav-menu-item
+{
+  padding: 0 30px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  color: #525151;
+  font-weight: 650;
+}
+.burger
+{
+  display: none; 
+}
+.burger-cross
+{
+  display: none;
+}
+.line
+{
+  width: 35px;
+  height: 4px;
+  background-color:rgba(248, 50, 50, 0.856);;
+  margin: 3px 0;
+  cursor: pointer;
+}
+.linkedin-btn
+{
+  background: #007bb5;
+  outline: none;
+  padding: 16px;
+  margin-left: 100px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.18);
+}
+.insta-btn
+{
+  background: #dd0623;
+  outline: none;
+  padding: 16px;
+  margin-left: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.18);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+}
+.github-btn
+{
+  background: rgb(43, 41, 41);
+  outline: none;
+  padding: 16px;
+  margin-left: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.18);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+}
+.home-content .nav-btn
+{
+  /* margin-left: 100px; */
+  background-color:rgba(248, 50, 50, 0.9);
+  outline: none;
+  width: 200px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: white;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 30px;
+}
+.home-content .cv
+{
+  margin-left: 20px;
+}
+.nav-menu-item:hover
+{
+  color:rgba(248, 50, 50);
+}
+.nav-btn:hover
+{
+  background-color:rgba(248, 50, 50);
+}
+
+/*Home Section goes here*/
+.home
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  height: 80vh;
+  /* padding: 50px 100px 0; */
+} 
+.home-content h1{
+  font-size:70px;
+  text-align: center;
+  margin-top: 100px;
+  color: rgb(24, 39, 85);
+  font-family: 'Times New Roman', Times, serif;
+}
+.home-content p{
+  color: rgba(29, 37, 58, 0.788);
+  font-size: 16px;
+  font-weight: 600;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-top: -10px;
+}
+.home-content .profile
+{
+  font-size: 60px;
+}
+.home-content .center
+{
+  text-align: center;
+}
+
+
+/*home section ends here*/
+
+/*Education details section*/
+.education-section
+{
+  width: 75%;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+  margin-top: 50px;
+  text-align: center;
+}
+.education-heading
+{
+  font-size:150%;
+  background-color: rgba(250, 205, 6, 0.966);
+  padding-left: 20px;
+  color: rgb(24, 39, 85);
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+  padding: 15px 40px;
+  display: inline;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+.education-row
+{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.education-col-1
+{
+  margin: 80px 20px 80px;
+}
+@media(max-width: 1200px)
+{
+  .linkedin-btn
+  {
+    display: none;
+  }
+  .insta-btn
+  {
+    display: none;
+  }
+  .github-btn
+  {
+    display: none;
+  }
+  .education-row{
+    margin-top: 30px;
+  }
+  .education-col-1
+  {
+    margin: 10px 20px 10px;
+  }
+}
+@media(max-width: 768px)
+{
+  .about-section
+  {
+    padding: 30px 10px;
+    margin: 20px;
+    /* width: 50%; */
+  }
+  .about
+  {
+    padding: 10px;
+  }
+  .home-content .profile
+  {
+    font-size: 30px;
+  }
+  .home-content h1
+  {
+    font-size: 40px;
+  }
+  .home-content p
+  {
+    font-size: 14px;
+    width: 80%;
+  }
+  .personal-details
+  {
+   flex-flow: column;
+   padding: 20px 0;
+  }
+  .email
+  {
+    clear: right;
+  }
+  .phone{
+   clear: left;  
+  }
+
+}
+@media(max-width:468px)
+{
+
+  .home{
+    /* padding-top: -20px; */
+    height: 70vh;
+  }
+  .home-content .profile
+  {
+    font-size: 30px;
+  }
+  .home-content h1
+  {
+    font-size: 40px;
+  }
+  .home-content p
+  {
+    font-size: 14px;
+    width: 80%;
+  }  
+  .education-section
+  {
+    width: 100%;
+  }
+}
+@media(max-width: 934px)
+{
+  .nav-bar
+  {
+    justify-content: flex-start;
+    flex-flow: column;
+    align-items: flex-start;
+    padding-left: 30px;
+  }
+  .nav-menu
+  {
+    display: none;
+  }
+  .nav-link
+  {
+    clear: left;
+    padding: 8px 0;
+  }
+  .nav-menu-item
+  {
+    padding: 0;
+  }
+  .burger
+  {
+    display: block; 
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 30px; 
+  }
+  .burger-cross
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    margin-right: 30px; 
+  }
+  .cross
+  {
+    font-weight: bolder;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(248, 50, 50, 0.856);
+  }
+}
+.flip-card
+{
+  background-color:rgba(248, 50, 50);
+  width: 300px;
+  height: 320px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card-inner {
+  position: relative;
+  width: 300px;
+  height: 320px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; 
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* .flip-card-front {
+  background-color: rgba(248, 50, 50, 0.856);
+  color: white;
+} */
+
+.flip-card-back {
+  background-color:white;
+  transform: rotateY(180deg);
+}
+.flip-card-front .class
+{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+.flip-card-front .course
+{
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+.flip-card-front .center
+{
+  text-align: center;
+}
+.flip-card-front .read-more-btn
+{
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background-color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(29, 37, 58, 0.788);
+}
+/* .flip-card-front .read-more-btn:hover
+{
+  background-color: rgba(50, 51, 53, 0.788);
+  color: white;
+} */
+.flip-card-back .clg-name
+{
+  color: rgba(248, 50, 50, 0.856);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.flip-card-back .clg-name-text
+{
+  color: #353434;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  padding: 0 5px;
+  text-align: center;
+  font-size: 16px;
+}
+.flip-card-back .branch
+{
+  color: rgba(248, 50, 50, 0.856);
+  text-align: center;
+  margin-top: -5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.flip-card-back .branch-text
+{
+  color: #353434;
+  padding: 0 5px;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-size: 16px;
+}
+
+.flip-card-back .percentage
+{
+  color: rgba(248, 50, 50, 0.856);
+  text-align: center;
+  margin-top: -5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.flip-card-back .percentage-text
+{
+  color: #353434;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 0 5px;
+  font-size: 16px;
+}
+/*education section ends here*/
+
+/*Training section starts here*/
+.training-card
+{
+ border: 1px solid rgba(252, 252, 252, 0.897);
+  padding:20px;
+  width: 320px;
+  height: 320px;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px 8px;
+}
+.training-name
+{
+  color: #353434;
+  font-size: 22px;
+  font-weight: 600;
+}
+.training-duration
+{
+  color: #353434;
+  font-size: 18px;
+  font-weight: 600;
+}
+.training-org
+{
+  margin-top: -5px;
+  color: #353434;
+  
+}
+.training-certi
+{
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(248, 50, 50, 0.856);
+  padding: 15px 30px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  margin-top: 20px;
+}
+.training-certi:hover
+{
+  background-color:rgba(29, 37, 58, 0.788);
+  color:white;
+}
+.training_icon
+{
+  font-size: 70px;
+  color: rgb(218, 51, 10);
+}
+.training-card:hover
+{
+  background-color:  rgba(248, 50, 50, 0.856);
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+}
+.training-card:hover .training-name
+{
+  color: white;
+}
+.training-card:hover .training-duration
+{
+  color: white;
+}
+.training-card:hover .training-org
+{
+  color: white;
+}
+.training-card:hover .training_icon
+{
+  color: white;
+}
+.training-card:hover .training-certi
+{
+  background-color: white;
+  color: rgba(248, 50, 50, 0.856);
+}
+
+/*training section ends here*/
+
+/*project details section starts here*/
+.proj-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin: auto;
+}
+.proj-flip-card
+{
+  background-color:white;
+  margin: 4px;
+  width: 300px;
+  height: 320px;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+.proj-img
+{
+  width: 120px;
+  height: 120px;
+}
+
+.proj-name
+{
+  color: black;
+  opacity: 0.9;
+  font-size: 25px;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.proj-desc
+{
+  font-size: 15px;
+ 
+}
+.proj-flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+/*project section ends here*/
+
+/*about section starts here*/
+.about-section
+{
+  /* width: 75%; */
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+  margin: 50px 200px;
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content:center;
+  align-items: center;
+}
+.about-img
+{
+  width: 250px;
+  height: 250px;
+}
+.about
+{
+  font-size: 16px;
+  width: 55%;
+  text-align: left;
+  padding: 50px;
+}
+.salute
+{
+  font-size: 18px;
+  font-weight: 550;
+}
+.personal-details
+{
+  
+  background-color: rgba(206, 202, 202, 0.37);
+  padding: 20px 50px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.email, .phone
+{
+  font-weight: 600;
+  margin: 20px;
+}
+
