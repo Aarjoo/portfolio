@@ -12,8 +12,8 @@ const About = () => {
 
         </div>
          <div className="personal-details">
-         <p className="email">Email : aarjoo1234@gmail.com</p>
-         <p className="phone">Phone : +91-39339399299</p>
+         <p className="email">Email : aarjoopanwar1234@gmail.com</p>
+         <p className="phone">Phone : 8979299062</p>
         </div>
         </>
      );
